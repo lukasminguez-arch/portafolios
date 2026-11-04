@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Nueva Eridu - Registro y Contacto</title>
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+<body>
+    <header>
+        <h1>Red de Encargos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="explora.html">Explora y Compara</a></li>
+                <li><a href="contacto.html">Inscripción / Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Solicitud de Cooperación para Operaciones de Extracción</h2>
+            <p>¿Tienes madera de líder o necesitas contratar los servicios de un Proxy? Rellena este formulario encriptado para unirte a la red de mercenarios o solicitar una escolta. Los campos con un asterisco (<strong>*</strong>) son obligatorios para evitar el rastreo del Ministerio de Asuntos Interiores.</p>
+        </section>
+        <form>
+            <fieldset>
+                <legend><strong>Grupo 1: Identificación del Solicitante</strong></legend>
+                
+                <p>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Proxy_BE" required>
+                </p>
+
+                <p>
+                    <label for="correo">Correo:</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="usuario@eridu.net" required>
+                </p>
+
+                <p>
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password" minlength="6" placeholder="Mínimo 6 dígitos de cifrado" required>
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha Programada de Incursión :</label><br>
+                    <input type="date" id="fecha" name="fecha" min="2026-10-14" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+           
+            <fieldset>
+                <legend><strong>Grupo 2: Parámetros de la Misión</strong></legend>
+
+                <p><strong>Nivel de Peligro Estimado de la Cavidad</strong></p>
+                <input type="radio" id="peligro-bajo" name="nivel_peligro">
+                <label for="peligro-bajo">Periferia (Peligro bajo - Etéreos menores)</label><br>
+                
+                <input type="radio" id="peligro-medio" name="nivel_peligro">
+                <label for="peligro-medio">Cavidad Intermedia (Peligro moderado - Estructuras inestables)</label><br>
+                
+                <input type="radio" id="peligro-alto" name="nivel_peligro">
+                <label for="peligro-alto">Núcleo Crítico (Peligro alto - Presencia de Jefes Etéreos)</label>
+                
+        
+                <p><strong>Recursos primarios que deseas extraer (Selecciona varios si aplica):</strong></p>
+                <input type="checkbox" id="res-eter" name="recursos" value="cristales_eter">
+                <label for="res-eter">Cristales de Éter de alta pureza</label><br>
+                
+                <input type="checkbox" id="res-datos" name="recursos" value="datos_antiguos">
+                <label for="res-datos">Cintas de datos de la antigua civilización</label><br>
+                
+                <input type="checkbox" id="res-motores" name="recursos" value="componentes">
+                <label for="res-motores">Chatarra y piezas de Motor W abandonados</label>
+
+                <p>
+                    <label for="facción">¿Con qué facción local tienes mayor afinidad?</label><br>
+                    <select id="facción" name="facción">
+                        <option value="hares">Liebres Astutas (Cunning Hares)</option>
+                        <option value="belobog">Belobog Heavy Industries</option>
+                        <option value="victoria">Victoria Housekeeping Co.</option>
+                        <option value="ninguna">Ninguna, soy un lobo solitario</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="agentes">Número de agentes de escolta requeridos (Máximo 3):</label><br>
+                    <input type="number" id="agentes" name="agentes" min="0" max="3" value="1">
+                </p>
+
+                <p>
+                    <label for="coordenadas">Sube tu mapa de señales de radar (.jpg o .pdf de la Cavidad):</label><br>
+                    <input type="file" id="coordenadas" name="coordenadas" accept="image/*,.pdf">
+                </p>
+
+                <p>
+                    <label for="mensaje">Describe detalladamente los síntomas de contaminación etérea observados u observaciones del terreno:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí las especificaciones del encargo..."></textarea>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <p>
+                <input type="checkbox" id="condiciones" name="condiciones" required>
+                <label for="condiciones">Entiendo que esta es una  de red ficticia  y que los datos se envían a un Proxy real.</label>
+            </p>
+
+            <p>
+                <button type="submit">Transmitir Señal</button>
+                <button type="reset">Borrar Terminal</button>
+            </p>
+
+        </form>
+
+        <section>
+            <p>Si la red HDD experimenta interferencias, envía un correo cifrado a: <a href="mailto:phaethon@randomplay.net">phaethon@randomplay.net</a></p>
+        </section>
+    </main>
+
+
+    <footer>
+        <hr>
+        <p>
+            <a href="index.html">Volver a la Terminal de Inicio</a> | 
+            <a href="explora.html">Volver al Centro de Datos</a>
+        </p>
+    </footer>
+
+</body>
+</html>

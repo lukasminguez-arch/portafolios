@@ -1,0 +1,80 @@
+/* BLOQUE 3: Variables. Cambia estos colores con tu clase. */
+:root {
+  --principal: #4c42bd;
+  --oscuro: #20233f;
+  --texto: #4d5267;
+  --claro: #f4f5fc;
+  --blanco: #ffffff;
+  --borde: #e3e5ef;
+}
+/* BLOQUE 3: Reset básico y tipografía */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--texto); line-height: 1.65; background: var(--blanco); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--principal); }
+a:focus-visible { outline: 3px solid #f0a52c; outline-offset: 4px; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { color: var(--oscuro); line-height: 1.2; }
+h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); margin-bottom: 24px; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); margin-bottom: 24px; }
+h3 { font-size: 1.2rem; margin-bottom: 10px; }
+.contenedor { width: min(1100px, 90%); margin-inline: auto; }
+.seccion { padding: 88px 0; }
+.fondo-suave { background: var(--claro); }
+.subtitulo, .categoria { font-weight: bold; color: var(--principal); }
+.texto-limitado { max-width: 760px; }
+.salto { position: absolute; left: -9999px; background: white; padding: 10px; z-index: 10; }
+.salto:focus { left: 10px; top: 10px; }
+
+/* BLOQUE 4: Cabecera y navegación */
+.cabecera { border-bottom: 1px solid var(--borde); background: var(--blanco); }
+.barra { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 18px; }
+.marca { color: var(--oscuro); text-decoration: none; font-size: 1.8rem; font-weight: 800; }
+.marca span, h1 span { color: var(--principal); }
+.menu { display: flex; flex-wrap: wrap; gap: 22px; list-style: none; padding: 0; margin: 0; }
+.menu a { color: var(--oscuro); font-weight: bold; text-decoration: none; }
+.menu a:hover, .pie a:hover { text-decoration: underline; }
+
+/* BLOQUE 4: Portada */
+.hero { background: linear-gradient(130deg, #f4f5fc, #fff); padding-block: 90px; }
+.hero-contenido { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; }
+.etiqueta { color: var(--principal); font-weight: bold; }
+.intro { max-width: 560px; font-size: 1.1rem; }
+.acciones { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+.boton { display: inline-block; background: var(--principal); border: 2px solid var(--principal); color: var(--blanco); padding: 12px 21px; border-radius: 10px; font-weight: bold; text-decoration: none; }
+.boton:hover { background: #342a9f; border-color: #342a9f; }
+.boton.secundario { background: transparent; color: var(--principal); }
+.boton.secundario:hover { background: #e8e6ff; }
+.imagen-hero { width: 100%; }
+
+/* BLOQUE 5: Tarjetas y proyectos */
+.tarjetas { display: grid; gap: 24px; }
+.habilidades { grid-template-columns: repeat(3, 1fr); }
+.proyectos { grid-template-columns: repeat(2, 1fr); }
+.tarjeta { border: 1px solid var(--borde); border-radius: 16px; background: var(--blanco); padding: 26px; }
+.emoji { display: inline-block; font-size: 2rem; margin-bottom: 12px; }
+.proyecto { padding: 0; overflow: hidden; }
+.proyecto img { width: 100%; aspect-ratio: 5 / 3; object-fit: cover; }
+.tarjeta-contenido { padding: 25px; }
+.tarjeta-contenido a { font-weight: bold; }
+
+/* BLOQUE 6: Contacto y pie */
+.contacto { text-align: center; background: var(--claro); }
+.contacto p { margin-bottom: 25px; }
+.contacto .nota { margin: 20px 0 0; font-size: .85rem; }
+.pie { padding: 24px 0; background: var(--oscuro); }
+.pie .contenedor { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.pie p { color: #f0f1ff; margin: 0; }
+.pie a { color: #fff; }
+
+/* BLOQUE 7: Diseño responsive */
+@media (max-width: 760px) {
+  .barra, .pie .contenedor { flex-direction: column; align-items: flex-start; }
+  .hero-contenido { grid-template-columns: 1fr; }
+  .hero { padding-block: 54px; }
+  .seccion { padding-block: 58px; }
+  .habilidades, .proyectos { grid-template-columns: 1fr; }
+  .menu { gap: 12px 18px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
