@@ -1,27 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Mínguez Portafolio</title>
-    <meta name="descripcion" content="Proyectos CSS de Lucas">
+    <title>Lucas Mínguez Portafolio - Proyectos CSS</title>
+    <meta name="description" content="Proyectos CSS de Lucas Mínguez">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Lucas Mínguez">
-    <link rel="icon" type="imgen/svg+ml" href="img/favicon_io/favicon-16x16.png">
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="icon" type="image/png" href="/img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="/CSS/css.css">
 </head>
 <body>
-        <a class="salto"  href="/index.html">LM</a>
+    <a class="salto" href="/index.html">LM</a>
+
     <header>
-      <h1 class="intro">Lucas Minguez</h1>
-      <p class="intro">Hola soy Lucas Minguez y soy un estudiante que esta aprendiendo HTML,JAVA y SEO</p>
-      <nav>
-               <a href="/">Sobre mí</a>
-                 <a href="/habilidades.html">Habilidades</a>
-                 <a href="/Proyectos.html">Proyectos</a>
-                <a href="/contacto.html">Contacto</a>
-      </nav>
+        <img src="/img/logotipo.jpg" alt="Lucas Mínguez" class="img-header">
+        <h1 class="intro">Lucas Mínguez</h1>
+        <p class="intro">Hola soy Lucas Mínguez y soy un estudiante que está aprendiendo HTML, JAVA</p>
+        <nav>
+            <a href="/sobremi.html">Sobre mí</a>
+            <a href="/habilidades.html">Habilidades</a>
+            <a href="/Proyectos.html">Proyectos</a>
+            <a href="/contacto.html">Contacto</a>
+        </nav>
     </header>
-     <footer>
-    <p>© 2026 Lucas Mínguez - Mi primer portafolio web</p>
-  </footer>
+
+    <main>
+        <section class="contenedor-proyectos">
+            <h2 class="titulo-seccion">Mis Proyectos de CSS</h2>
+            <div class="grid-proyectos">
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Aprendiendo CSS V1</h3>
+                        <p>Probando la semántica y las primeras reglas de estilo con CSS.</p>
+                        <div class="etiquetas">
+                            <span class="etiqueta">HTML5</span>
+                            <span class="etiqueta">CSS3</span>
+                        </div>
+                        <div class="enlaces">
+                            <a href="CSS/clase1/EJERCICIO1.HTML" class="btn btn-primario" target="_blank">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Aprendiendo CSS V2</h3>
+                        <p>Siguiendo el aprendizaje de las etiquetas semánticas y maquetación con CSS.</p>
+                        <div class="etiquetas">
+                            <span class="etiqueta">HTML5</span>
+                            <span class="etiqueta">CSS</span>
+                        </div>
+                        <div class="enlaces">
+                            <a href="CSS/clase2/ejercicio2.html" class="btn btn-primario" target="_blank">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Prueba de entornos</h3>
+                        <p>Práctica de estructura y estilos combinados en entorno de desarrollo.</p>
+                        <div class="etiquetas">
+                            <span class="etiqueta">HTML5</span>
+                            <span class="etiqueta">CSS</span>
+                            <span class="etiqueta">JavaScript</span>
+                        </div>
+                        <div class="enlaces">
+                            <a href="prueba.entornos/entornos.html" class="btn btn-primario" target="_blank">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Guía de Supervivencia en Nueva Eridu</h3>
+                        <p>Pequeña prueba de diseño con CSS aplicada a un proyecto de HTML.</p>
+                        <div class="etiquetas">
+                            <span class="etiqueta">HTML5</span>
+                            <span class="etiqueta">CSS</span>
+                        </div>
+                        <div class="enlaces">
+                            <a href="ejercicio 2 solo CSS/index.html" class="btn btn-primario" target="_blank">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucas Mínguez - Mi primer portafolio web</p>
+    </footer>
+</body>
+</html>

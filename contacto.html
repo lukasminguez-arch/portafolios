@@ -1,28 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Mínguez Portafolio</title>
-    <meta name="descripcion" content="Contacta con Lucas por correo">
+    <title>Lucas Mínguez Portafolio - Contacto</title>
+    <meta name="description" content="Contacta con Lucas Mínguez por correo">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Lucas Mínguez">
-    <link rel="icon" type="imgen/svg+ml" href="img/favicon_io/favicon-16x16.png">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" type="image/png" href="img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/contacto.css">
 </head>
 <body>
-       <a class="salto"  href="index.html">LM</a>
+    <a class="salto" href="index.html">LM</a>
 
     <header>
-      <h1 class="intro">Lucas Minguez</h1>
-      <p class="intro">Hola soy Lucas Minguez y soy un estudiante que esta aprendiendo HTML,JAVA y SEO</p>
-      <nav>
-                 <a href="sobremi.html">Sobre mí</a>
-                 <a href="habilidades.html">Habilidades</a>
-                 <a href="Proyectos.html">Proyectos</a>
-                 <a href="index.html">Contacto</a>
-      </nav>
+        <img src="img/logotipo.jpg" alt="Lucas Minguez" class="img-header">
+        <h1 class="intro">Lucas Mínguez</h1>
+        <p class="intro">Hola soy Lucas Mínguez y soy un estudiante que está aprendiendo HTML, JAVA</p>
+        <nav>
+            <a href="sobremi.html">Sobre mí</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="Proyectos.html">Proyectos</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
     </header>
-     <footer>
-    <p>© 2026 Lucas Mínguez - Mi primer portafolio web</p>
-  </footer>
+
+    <main id="contenido">
+        <section class="intro-contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna duda, propuesta o quieres comentar alguno de mis proyectos? Rellena el siguiente formulario y te responderé lo antes posible.</p>
+        </section>
+
+        <section class="seccion-formulario">
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Motivo del contacto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta general</option>
+                        <option value="proyecto">Colaboración o proyecto</option>
+                        <option value="estudio">Duda sobre DAM / Programación</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                </div>
+
+                <div class="botones-form">
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset" class="btn-limpiar">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucas Mínguez - Mi primer portafolio web</p>
+    </footer>
+</body>
+</html>

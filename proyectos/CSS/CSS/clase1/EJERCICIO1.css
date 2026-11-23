@@ -1,0 +1,72 @@
+/*cambia el color ene l cuerpo*/
+
+body {
+background-color: lightgray;
+font-size: 32px;
+}
+/*COLOR EN EL H1*/
+
+h1{
+  background-color: aqua;
+  color: navy;
+font-size: 32px;
+}
+
+/* COLOR EN TODS LOS PARRAFO*/
+
+p {
+color: blue;
+}
+
+/*CAMBIA COLOR DE LA PALABRA CON LA CLASE  CON UNA PALABRA*/
+
+.destacado {
+color: red;
+}
+.FEO {
+color: rgb(0, 0, 0);
+}
+/*Selecciona el elemento cuyo atributo id coincide con el identificador
+indicado*/
+#principal {
+color: green;
+}
+
+/*Selecciona todos los elementos del documento, va arriva del todo*/
+* {
+box-sizing: border-box;
+}
+
+/*Permite aplicar las mismas declaraciones a varios selectores sin repetir la
+regla*/
+
+h1, h2, h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Selecciona elementos que se encuentran dentro de otro elemento, aunque
+no sean hijos directos.*/
+nav a { color: rgb(238, 255, 0); }
+
+/*Selecciona elementos que son hijos directos del elemento indicado.*/
+.menu > li { color: blue; }
+
+/*Selecciona el primer elemento indicado que aparece inmediatamente
+después de otro elemento hermano.*/
+h2 + p { color: red; }
+
+/*La «C» de CSS significa Cascading. Cuando varias reglas afectan a la misma
+propiedad del mismo elemento, el navegador debe decidir cuál termina
+aplicándose.*/
+p { color: blue; }
+p { color: red; }
+
+/*Algunas propiedades CSS pueden transmitirse desde un elemento padre a
+sus descendientes. Es frecuente en propiedades relacionadas con texto*/
+body { color: rgb(4, 4, 17); }
+
+/*Un mismo elemento puede coincidir con varios selectores. Si todos intentan
+cambiar color, se aplica la declaración que gane la cascada.*/
+p { color: rgb(251, 251, 255); }
+.aviso { color: rgb(110, 90, 53); }
+#urgente { color: rgba(255, 7, 234, 0.288); }

@@ -1,0 +1,53 @@
+
+/*cambia el color de fondo y cambia tipografia */
+body {
+background-color: #f0a7a7;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+/*pone una imagen de fondo y puese cambiarla de lado , no repetir, cambiar tamaño, AJUSTARLO AL CAMBIAR DE PAGUINA,*/
+.hero {
+background-image: url("img/REAL.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size:auto;
+background-attachment: fixed;
+}
+/*
+Permite poner todo el codigo seguido
+.hero {
+background: #0f172a url("../img/fondo.jpg") no-repeat
+center / cover;
+}
+*/
+
+/*cambia de lugar el h1y Añade una o varias sombras al texto y tamaño*/
+h1 {
+text-align: center;
+text-shadow: 2px 2px 4px #94a3b8;
+font-size: 120px;
+} 
+
+/*Decorar el texto */
+a {
+text-decoration:line-through ;
+font-size: 32px;
+}
+/*Transforma visualmente el uso de mayúsculas/minúsculas sin cambiar el
+texto original del HTML y el grosr de la fuente*/
+h2 {
+text-transform:capitalize;
+font-weight: 900;
+}
+/*sangria y espacio entre lineas y palabras*/
+p {
+text-indent: 2rem;
+line-height: 2.6;
+word-spacing: 4px;
+letter-spacing: 2px;
+}
+
+/*Controla el estilo tipográfico, normalmente normal o italic */
+blockquote {
+font-style: italic;
+}

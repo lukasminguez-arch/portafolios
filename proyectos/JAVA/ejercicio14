@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.tema4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author lucasminguez1
+ */
+public class ejercicio14 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Character letra='a';
+      ArrayList<Character> cadena= new ArrayList();
+        for(int i=97; i<123;i++){
+            Character caracter = (char) i;
+        cadena.add(caracter);
+    }     
+        ArrayList<Character> vocales= new ArrayList(List.of('a','e','o','i','u'));
+           for(char x:vocales){
+              int posicion=0;
+               for(char y: cadena){
+                   if(x==y){
+                       cadena.set(posicion,'@');
+                       break;
+                   }
+                   posicion++;
+               }
+           }
+        System.out.println(cadena);
+    }
+    
+}

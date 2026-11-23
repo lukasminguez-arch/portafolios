@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.tema4;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+
+
+
+/**
+ *
+ * @author lucasminguez1
+ */
+public class ejercicio15 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws IOException {
+		Scanner leer = new Scanner(System.in);
+		PrintWriter out1;
+		Scanner in1;
+		String cad1;
+		String ext=".txt";
+		int sol;
+              
+		System.out.println("Introduce tres nombres");
+		cad1 = leer.next();
+		System.out.println(cad1);
+		cad1+=ext;
+		System.out.println(cad1);
+
+		out1 = new PrintWriter(new FileWriter(cad1));
+		for (int aa = 0; aa < 100; aa = aa + 20) {
+			out1.printf("%d ", aa);
+		}
+		out1.close();
+		in1 = new Scanner(new FileReader(cad1));
+		for (int bb = 0; bb < 50; bb = bb + 5) {
+			sol = in1.nextInt();
+			System.out.printf("%d ", sol);
+		}
+		in1.close();
+    }
+}

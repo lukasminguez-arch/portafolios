@@ -1,29 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Mínguez Portafolio</title>
-    <meta name="descripcion" content="Principales proyectos de Lucas">
+    <title>Lucas Mínguez Portafolio - Proyectos</title>
+    <meta name="description" content="Principales proyectos de Lucas Mínguez">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Lucas Mínguez">
-    <link rel="icon" type="imgen/svg+ml" href="img/favicon_io/favicon-16x16.png">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" type="image/png" href="img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/proyectos.css">
 </head>
 <body>
-        <a class="salto"  href="index.html">LM</a>
+    <a class="salto" href="index.html">LM</a>
 
     <header>
-      <h1 class="intro">Lucas Minguez</h1>
-      <p class="intro">Hola soy Lucas Minguez y soy un estudiante que esta aprendiendo HTML,JAVA y SEO</p>
-      <nav>
-                 <a href="sobremi.html">Sobre mí</a>
-                 <a href="habilidades.html">Habilidades</a>
-                 <a href="index.html">Proyectos</a>
-                <a href="contacto.html">Contacto</a>
-      </nav>
+        <img src="img/logotipo.jpg" alt="Lucas Mínguez" class="img-header">
+        <h1 class="intro">Lucas Mínguez</h1>
+        <p class="intro">Hola soy Lucas Mínguez y soy un estudiante que está aprendiendo HTML, JAVA</p>
+        <nav>
+            <a href="sobremi.html">Sobre mí</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
-    
-     <footer>
-    <p>© 2026 Lucas Mínguez - Mi primer portafolio web</p>
-  </footer>
+
+    <main id="contenido">
+        <section class="intro-proyectos">
+            <h2>Mis Proyectos</h2>
+            <p>Aquí puedes ver una selección de tres trabajos prácticos desarrollados durante mi aprendizaje en DAM.</p>
+        </section>
+
+        <section class="lista-proyectos">
+            <article class="tarjeta-proyecto">
+                <div>
+                    <span class="etiqueta-tech">HTML</span>
+                    <h3>Los mejores juegos en la actualidad</h3>
+                    <p>Una web informativa con listas, tablas, imágenes, vídeos y audios.</p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Practicar HTML semántico</li>
+                        <li><strong>Tecnologías:</strong> HTML</li>
+                    </ul>
+                </div>
+                <a href="proyectos/html/ejercicio4 - copia/ejercicio4 - copia/ejercicio parte1 .html" target="_blank">Ver proyecto</a>
+            </article>
+
+            <hr>
+
+            <article class="tarjeta-proyecto">
+                <div>
+                    <span class="etiqueta-tech">CSS</span>
+                    <h3>Guía de Supervivencia en Nueva Eridu</h3>
+                    <p>Proyecto donde apliqué paleta de colores, tipografías, transiciones, alineado y botones.</p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Dominar el posicionamiento y estilos</li>
+                        <li><strong>Tecnologías:</strong> HTML, CSS</li>
+                    </ul>
+                </div>
+                <a href="proyectos/CSS/ejercicio 2 solo CSS/index.html" target="_blank">Ver diseño completo</a>
+            </article>
+
+            <hr>
+
+            <article class="tarjeta-proyecto">
+                <div>
+                    <span class="etiqueta-tech">Java</span>
+                    <h3>Euromillón</h3>
+                    <p>Programa donde se aplican datos con bucles, condicionales y programación orientada a objetos.</p>
+                    <ul>
+                        <li><strong>Objetivo:</strong> Lógica de programación y manejo de datos</li>
+                        <li><strong>Tecnologías:</strong> NetBeans</li>
+                    </ul>
+                </div>
+                <a class="boton-proyecto" href="proyectos/JAVA/Practica1" target="_blank">Ver código</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucas Mínguez - Mi primer portafolio web</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.practica1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Lucasminguez1
+ */
+public class Practica1 {
+static Scanner sc= new Scanner(System.in);
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> usuarioNumeros = new ArrayList<>();
+        ArrayList<Integer> usuarioEstrellas = new ArrayList<>();
+        ArrayList<Integer> ganadoraNumeros = new ArrayList<>();
+        ArrayList<Integer> ganadoraEstrellas = new ArrayList<>();
+        
+        System.out.println("Introduce el precio del numero:");
+        double p2=sc.nextDouble();
+        System.out.println("Introduce el precio de la estrella:");
+        double p1=sc.nextDouble();
+
+        System.out.println("Bienvenido a su Euromillon online.");
+        System.out.println("Hoy el numero acertado se paga "+ p2 + " euros ");
+        System.out.println("Y la estrella acertada se paga a "+ p1 +" euros ");
+
+        
+        System.out.print("Quiere que la combinacion se genere de forma automatica o manual: ");
+        String modo = sc.next();
+        
+       switch (modo) {
+        case "manual" -> {
+            for (int i = 1; i < 6; i++) {
+                System.out.print("Introduzca el numero " + i + " [1-50]: ");
+                usuarioNumeros.add(scanner.nextInt());
+            }
+            for (int i = 1; i < 3; i++) {
+                System.out.print("Introduzca la estrella " + i + " [0-9]: ");
+                usuarioEstrellas.add(scanner.nextInt());
+            }
+            if (!validarRangos(usuarioNumeros, usuarioEstrellas)) {
+                System.out.println("Gracias por usar nuestro programa. Hasta la proxima.");
+                return;
+            }
+        }
+        case "automatica" -> generarAleatorios(usuarioNumeros, usuarioEstrellas);
+        
+        default -> {
+            System.out.println("El usuario introdujo mal el dato. Abortando programa.");
+            System.out.println("Gracias por usar nuestro programa. Hasta la proxima.");
+            return;
+        }
+    }
+      
+        if (tieneRepetidos(usuarioNumeros) || tieneRepetidos(usuarioEstrellas)) {
+            System.out.println("Lo sentimos, algunos de los datos introducidos estan repetidos y el programa no continuara haciendo ningun calculo mas .");
+            System.out.println("Gracias por usar nuestro programa. Hasta la proxima.");
+            return;
+        }
+
+        System.out.print("Quiere visualizar la combinacion generada? (si/no): ");
+        String ver = scanner.next();
+        if (ver.equals("si")) {
+            mostrarCombinacion("Su combinacion", usuarioNumeros, usuarioEstrellas);
+        }else{
+            System.out.println("El usuario introdujo mal el dato. Abortando programa.");
+            return;
+        }
+        
+        generarAleatorios(ganadoraNumeros, ganadoraEstrellas);
+
+        if (tieneRepetidos(ganadoraNumeros) || tieneRepetidos(ganadoraEstrellas)) {
+            ganadoraNumeros.clear();
+            ganadoraEstrellas.clear();
+            
+            ganadoraNumeros.add(14); ganadoraNumeros.add(16); ganadoraNumeros.add(22); ganadoraNumeros.add(34); ganadoraNumeros.add(45);
+            ganadoraEstrellas.add(2); ganadoraEstrellas.add(9);
+        }
+
+        mostrarCombinacion("Combinacion ganadora", ganadoraNumeros, ganadoraEstrellas);
+
+        
+        int aciertosN = contarAciertos(usuarioNumeros, ganadoraNumeros, "numero");
+        int aciertosE = contarAciertos(usuarioEstrellas, ganadoraEstrellas, "estrella");
+
+        double premioTotal = (aciertosN * p2) + (aciertosE * p1);
+
+        if (premioTotal > 0) {
+            System.out.printf("El usuario ha ganado "+premioTotal+" euros. Enhorabuena.");
+        } else {
+            System.out.println("Lo sentimos. Boleto no premiado.");
+        }
+
+        System.out.println("Gracias por usar nuestro programa. Hasta la proxima.");
+    }
+
+
+
+    public static void generarAleatorios(ArrayList<Integer> numeros, ArrayList<Integer> estrellas) {
+        for (int i = 0; i < 5; i++) {
+            numeros.add((int) (Math.random() * 50) + 1);
+        }
+        for (int i = 0; i < 2; i++) {
+            estrellas.add((int) (Math.random() * 10));
+        }
+    }
+
+    public static boolean validarRangos(ArrayList<Integer> numeros, ArrayList<Integer> estrellas) {
+       
+        for (int e : estrellas) {
+            if (e < 0 || e > 9) {
+                System.out.println("Se ha introducido estrellas fuera de rango");
+                return false;
+            }
+        }
+        for (int n : numeros) {
+            if (n < 1 || n > 50) {
+                System.out.println("Se ha introducido numeros fuera de rango");
+                return false;
+            }
+        }
+        System.out.println("Todos los datos introducidos estan dentro del rango correspondiente");
+        return true;
+    }
+
+    public static boolean tieneRepetidos(ArrayList<Integer> lista) {
+        for (int i = 0; i < lista.size(); i++) {
+            for (int j = i + 1; j < lista.size(); j++) {
+                if (lista.get(i).equals(lista.get(j))) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void mostrarCombinacion(String texto, ArrayList<Integer> numeros, ArrayList<Integer> estrellas) {
+        System.out.print(texto + " -> Numeros: ");
+        for (int n : numeros) System.out.print(n + " ");
+        System.out.print("| Estrellas: ");
+        for (int e : estrellas) System.out.print(e + " ");
+        System.out.println();
+    }
+
+    public static int contarAciertos(ArrayList<Integer> usuario, ArrayList<Integer> ganadora, String tipo) {
+        int aciertos = 0;
+        for (int u : usuario) {
+            if (ganadora.contains(u)) {
+                System.out.println("Ha acertado el " + tipo + " " + u);
+                aciertos++;
+            }
+        }
+         return aciertos;
+    }
+}

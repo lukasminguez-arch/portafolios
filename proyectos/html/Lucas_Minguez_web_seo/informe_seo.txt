@@ -1,0 +1,109 @@
+
+
+
+Nombre de la web: Viajeros de Teyvat
+Tema: Guías de optimización F2P (Free to Play) para Genshin Impact.
+ Público objetivo: Jugadores principiantes y de nivel medio que no
+  desean gastar dinero real en el juego y buscan superar el contenido
+  más difícil (Espiral del Abismo) optimizando sus recursos.
+¿Qué encontrarán?: Rutas eficientes de recolección de materiales,
+ guías de equipamiento (builds) utilizando exclusivamente armas y
+  artefactos accesibles, y guías conceptuales sobre mecánicas de combate.
+
+
+ Consulta Informativa: "cómo funciona el sistema gacha de genshin"
+ Qué espera encontrar: Una explicación clara, con ejemplos visuales
+ o tablas, sobre cuántos deseos se necesitan para asegurar un
+ personaje de 5 estrellas, qué es el "soft pity" y cómo se hereda
+ el contador entre distintos banners.
+
+Consulta de Proyecto / Interés: "mejores equipos F2P espiral del abismo"
+Qué espera encontrar: Configuraciones de equipos que utilicen solo
+personajes gratuitos (como Xiangling, Xingqiu, Bennett o el Viajero)
+junto a estrategias detalladas para derrotar a los enemigos de las
+últimas salas sin depender de personajes promocionales de 5 estrellas.
+
+
+Página 1: Inicio / Home
+Palabra clave principal: "guias genshin impact principiantes"
+Uso: Se integrará en el título principal y en la introducción
+donde se da la bienvenida a los nuevos jugadores a Teyvat.
+
+Página 2: Sección de Equipamiento y Personajes
+Palabra clave principal: "builds economicas genshin impact"
+Uso: Se empleará como encabezado de la sección donde se listan
+las combinaciones de armas de 4 estrellas y artefactos para el rol
+de cada personaje.
+
+Página 3: Sección de Farmear Recursos
+Palabra clave principal: "ruta de materiales genshin impact"
+Uso: Se usará de forma orgánica al inicio de los mapas interactivos
+y listados de recolección de plantas o minerales regionales.
+
+
+FASE 6 · Comprende el rastreo y la indexación
+
+22. 
+El rastreo es el paso inicial en el que los robots de Google recorren internet y descubren el código de nuestras tres páginas (index.html, tema1.html y tema2.html) saltando a través de los enlaces. La indexación ocurre después, cuando el buscador analiza ese código y decide guardar estas tres páginas en su índice o base de datos general tras comprobar que ofrecen contenido útil sobre Genshin Impact. Finalmente, la clasificación es el orden o posición competitiva que el buscador otorga a cada página en los resultados de búsqueda cuando un usuario introduce una duda concreta, por ejemplo, posicionar tema1.html en el primer lugar cuando alguien busca "guía del sistema de pity".
+
+23. 
+Un buscador puede descubrir nuestras páginas en internet si otro sitio web externo que ya es conocido por Google añade un enlace hacia nosotros, o si le notificamos manualmente la existencia de la web utilizando las herramientas oficiales de los buscadores. Los enlaces internos ayudan de forma decisiva porque funcionan como carreteras de interconexión; cuando el robot del buscador llega a la portada (index.html), sigue de forma natural los enlaces del menú de navegación para encontrar y leer tema1.html y tema2.html, evitando que se queden ocultas o descolgadas.
+
+24. 
+No, una página web que solo está abierta a nivel local desde el explorador de archivos de tu ordenador no puede aparecer automáticamente en Google bajo ninguna circunstancia. Para cambiar esto y que pase a ser accesible públicamente, se debe contratar un servicio de almacenamiento en internet (hosting) para alojar los archivos del proyecto y comprar un nombre de dominio que sirva como dirección oficial en la red.
+
+25. 
+El archivo robots.txt sirve para dar directrices claras a los buscadores sobre qué carpetas o secciones privadas del sitio tienen prohibido rastrear para no desperdiciar recursos del servidor, mientras que el sitemap.xml funciona como un listado organizado de todas las direcciones de la web que sí nos interesa indexar. La diferencia principal es que los enlaces HTML son elementos interactivos visuales pensados para guiar la navegación de los usuarios reales por las pestañas, mientras que un sitemap es un archivo de texto exclusivamente técnico estructurado para agilizar la lectura de los robots de búsqueda.
+
+26.
+Esta instrucción dentro del head le pide explícitamente a los motores de búsqueda que ignoren por completo esa página y no la añadan a sus bases de datos, haciendo que nunca aparezca en los resultados. Esta etiqueta no sería en absoluto adecuada para la portada de nuestro portal, ya que nuestro objetivo prioritario es que cualquier jugador nuevo nos encuentre en internet de forma orgánica para aprender a optimizar su cuenta de juego.
+
+27. 
+Un error 404 es un código de respuesta en servidores web que avisa de que el servidor ha sido encontrado, pero la página o recurso concreto solicitado ya no existe o se ha escrito incorrectamente en la barra de direcciones. En el caso de nuestros archivos locales (donde no aplica un código HTTP 404), dos errores comunes en los nombres o rutas que harían que un enlace deje de abrir un documento son:
+- Escribir de forma errónea la extensión o el nombre del archivo dentro del código del menú, como enlazar a <a href="tema1.htm"> u olvidar una letra en el enlace de origen.
+- Mover de sitio uno de los documentos HTML (por ejemplo, guardar tema2.html dentro de una subcarpeta nueva) sin actualizar de forma correspondiente la ruta del enlace en los demás archivos.
+
+
+FASE 7 · Mini auditoría de otra web (observación)
+
+
+28. 
+- Dirección de la web: https://genshin.gg/
+- Público útil: Esta plataforma web resulta muy útil para cualquier jugador de Genshin Impact, especialmente para aquellos usuarios intermedios o avanzados que necesitan consultar rápidamente guías de equipamiento (builds), composiciones de equipos optimizadas según el metajuego o listas de prioridad de personajes (tier lists) actualizadas.
+
+29.
+- Buen título identificado: En la sección principal de su menú, utilizan el título "Genshin Impact Best Teams".
+- Estructura de contenidos: Los contenidos están organizados visualmente mediante bloques limpios y separados; usan tarjetas visuales y títulos claros para categorizar las armas recomendadas, los conjuntos de artefactos idóneos y las prioridades de talentos de cada personaje.
+- Enlace: En su barra de navegación global tienen un enlace directo llamado "Characters List", el cual deja totalmente claro que al pulsarlo el visitante accederá al catálogo completo de héroes del juego.
+- Mejora propuesta: En pantallas pequeñas, el menú de filtros por elementos puede saturar la cabecera debido a la gran cantidad de iconos; una buena propuesta de mejora sería colapsar estos filtros dentro de un botón desplegable para agilizar la lectura inicial.
+
+30. 
+Al intentar revisar el archivo en la dirección pública https://genshin.gg, se comprueba que el archivo existe y es accesible para los rastreadores.
+
+ Se localiza una instrucción común como "Disallow: /wp-admin/" o similares directivas estándar de protección. Esto significa que el administrador de la web prohíbe explícitamente a los robots de búsqueda indexar los paneles internos o scripts de administración, garantizando la seguridad del sitio y optimizando el tiempo de rastreo en las páginas de contenido real.
+
+31. 
+ El archivo robots.txt especifica la dirección oficial de su mapa del sitio web mediante la directiva "Sitemap: http://genshin.gg/sitemap.xml". Al inspeccionar este índice o sitemap, se observa que aparecen listadas URLs técnicas organizadas jerárquicamente que dirigen a las guías individuales de cada personaje, listados de armas y categorías internas de la base de datos.
+
+32. 
+ Al ejecutar el comando de depuración site:genshin.gg en el motor de búsqueda de Google, se despliegan de forma fluida múltiples páginas indexadas del dominio. Se observa un patrón muy consistente en el snippet de los resultados, donde se priorizan títulos estructurados como "Nombre_Personaje Build - Genshin.gg" seguidos de metadescripciones optimizadas que sintetizan los mejores roles en combate de ese guerrero.
+
+
+FASE 8 · SEO Off-Page y decisiones responsables
+
+
+33. 
+- Dos mejoras On-Page:
+  1. Optimizar los textos de tema2.html añadiendo encabezados estructurados <h3> para separar de forma limpia la sección de cada personaje dentro del Equipo Nacional.
+  2. Reducir el tamaño y peso en kilobytes de los archivos mapa_teyvat.jpg y equipo_f2p.jpg para acelerar el tiempo de carga del sitio en conexiones móviles.
+- Dos señales Off-Page:
+  1. Que un creador de contenido o streamer de Genshin Impact incluya un enlace a nuestro sitio en la descripción de sus guías de vídeo en plataformas externas.
+  2. Que los propios jugadores compartan de manera orgánica el enlace de nuestra guía del pity en foros comunitarios como Reddit o hilos de redes sociales para resolver dudas de otros principiantes.
+
+34. 
+Es mucho mejor porque de forma natural valora nuestro contenido por dos razones fundamentales. En primer lugar, los algoritmos de búsqueda actuales penalizan con severidad las técnicas artificiales, lo que destruiría la visibilidad de la web. En segundo lugar, un enlace orgánico transmite autoridad real y nos proporciona un flujo constante de visitantes auténticos que de verdad están interesados en nuestras guías, a diferencia de los métodos artificiales que solo generan visitas fantasma.
+
+35. Justificación basada en la intención de búsqueda
+Para una persona que introduce esa consulta, lo más útil es una guía clara con materiales y pasos debido a que su intención de búsqueda es puramente informativa orientada a la acción. El usuario no busca información conceptual genérica, sino pautas estructuradas e inmediatas para resolver un problema práctico paso a paso. Esta misma lógica se aplica a nuestro sitio web: un jugador que busca "cómo funciona el pity" en Genshin Impact no quiere entrar a una portada general que le explique qué es el videojuego, sino que espera encontrar un artículo directo como tema1.html que le desglose los porcentajes exactos, el límite de deseos y las reglas de ahorro para optimizar sus recursos.
+
+
