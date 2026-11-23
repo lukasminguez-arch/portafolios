@@ -1,0 +1,50 @@
+public class Menu {
+
+    public static void main(String[] args) {
+  // Creamos el objeto Scanner para leer las entradas del usuario
+        Scanner entrada = new Scanner(System.in);
+        int opcion; // Variable para almacenar la opción del menú
+
+        do {
+            // Imprimimos las opciones del menú en la consola
+            System.out.println("\n=== MENU PRINCIPAL ===");
+            System.out.println("1. Saludar");
+            System.out.println("2. Calcular el doble de un numero");
+            System.out.println("3. Mostrar creditos");
+            System.out.println("4. Salir");
+            System.out.print("Seleccione una opcion: ");
+            
+            opcion = entrada.nextInt(); // Capturamos el número ingresado
+
+            // Evaluamos la opción seleccionada mediante la estructura switch
+            switch (opcion) {
+                case 1:
+                    System.out.println("¡Hola! Bienvenido al programa en Java.");
+                    break; // Finaliza el caso actual
+                    
+                case 2:
+                    System.out.print("Ingrese un número entero: ");
+                    int numero = entrada.nextInt();
+                    int doble = numero * 2;
+                    System.out.println("El doble de " + numero + " es: " + doble);
+                    break;
+                    
+                case 3:
+                    System.out.println("Programa desarrollado en NetBeans usando Switch/Case.");
+                    break;
+                    
+                case 4:
+                    System.out.println("Saliendo del programa... ¡Hasta pronto!");
+                    break;
+                    
+                default:
+                    // Se ejecuta si el usuario introduce un número que no está en el menú
+                    System.out.println("Opción no válida. Intente de nuevo.");
+                    break;
+            }
+            
+        } while (opcion != 4); // El bucle se repite mientras la opción no sea 4 (Salir)
+        
+        entrada.close(); // Cerramos el scanner para liberar memoria
+    }
+}
